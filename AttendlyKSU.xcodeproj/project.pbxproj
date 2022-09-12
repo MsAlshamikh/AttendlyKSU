@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0401D83DAF54DD8CD3C38D /* Pods_AttendlyKSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E26E25BF19D788BDDFED1B /* Pods_AttendlyKSU.framework */; };
 		343FF90128CF5627008C2467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FF90028CF5627008C2467 /* AppDelegate.swift */; };
 		343FF90328CF5627008C2467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FF90228CF5627008C2467 /* SceneDelegate.swift */; };
 		343FF90528CF5627008C2467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FF90428CF5627008C2467 /* ViewController.swift */; };
 		343FF90828CF5627008C2467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343FF90628CF5627008C2467 /* Main.storyboard */; };
 		343FF90A28CF5629008C2467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343FF90928CF5629008C2467 /* Assets.xcassets */; };
 		343FF90D28CF5629008C2467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343FF90B28CF5629008C2467 /* LaunchScreen.storyboard */; };
+		343FF91728CF5C71008C2467 /* GoogleService-Info-com.software.AttendlyKSU.plist in Resources */ = {isa = PBXBuildFile; fileRef = 343FF91628CF5C70008C2467 /* GoogleService-Info-com.software.AttendlyKSU.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		343FF90928CF5629008C2467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343FF90C28CF5629008C2467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		343FF90E28CF5629008C2467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343FF91628CF5C70008C2467 /* GoogleService-Info-com.software.AttendlyKSU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-com.software.AttendlyKSU.plist"; path = "../../../Downloads/GoogleService-Info-com.software.AttendlyKSU.plist"; sourceTree = "<group>"; };
+		614748E36A23D38C516B6F90 /* Pods-AttendlyKSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttendlyKSU.release.xcconfig"; path = "Target Support Files/Pods-AttendlyKSU/Pods-AttendlyKSU.release.xcconfig"; sourceTree = "<group>"; };
+		96E26E25BF19D788BDDFED1B /* Pods_AttendlyKSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttendlyKSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF32096CFBF756BCC9BC6C7 /* Pods-AttendlyKSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttendlyKSU.debug.xcconfig"; path = "Target Support Files/Pods-AttendlyKSU/Pods-AttendlyKSU.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0401D83DAF54DD8CD3C38D /* Pods_AttendlyKSU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33C815008CB1210B4440ED42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBF32096CFBF756BCC9BC6C7 /* Pods-AttendlyKSU.debug.xcconfig */,
+				614748E36A23D38C516B6F90 /* Pods-AttendlyKSU.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		343FF8F428CF5627008C2467 = {
 			isa = PBXGroup;
 			children = (
 				343FF8FF28CF5627008C2467 /* AttendlyKSU */,
 				343FF8FE28CF5627008C2467 /* Products */,
+				33C815008CB1210B4440ED42 /* Pods */,
+				D6FBDF0A9E2F5AEEA5733920 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,17 @@
 				343FF90928CF5629008C2467 /* Assets.xcassets */,
 				343FF90B28CF5629008C2467 /* LaunchScreen.storyboard */,
 				343FF90E28CF5629008C2467 /* Info.plist */,
+				343FF91628CF5C70008C2467 /* GoogleService-Info-com.software.AttendlyKSU.plist */,
 			);
 			path = AttendlyKSU;
+			sourceTree = "<group>";
+		};
+		D6FBDF0A9E2F5AEEA5733920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96E26E25BF19D788BDDFED1B /* Pods_AttendlyKSU.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 343FF91128CF5629008C2467 /* Build configuration list for PBXNativeTarget "AttendlyKSU" */;
 			buildPhases = (
+				04109081122B2EB9984F3F0A /* [CP] Check Pods Manifest.lock */,
 				343FF8F928CF5627008C2467 /* Sources */,
 				343FF8FA28CF5627008C2467 /* Frameworks */,
 				343FF8FB28CF5627008C2467 /* Resources */,
+				D44891C424F3B6645F516AEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				343FF90D28CF5629008C2467 /* LaunchScreen.storyboard in Resources */,
+				343FF91728CF5C71008C2467 /* GoogleService-Info-com.software.AttendlyKSU.plist in Resources */,
 				343FF90A28CF5629008C2467 /* Assets.xcassets in Resources */,
 				343FF90828CF5627008C2467 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04109081122B2EB9984F3F0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AttendlyKSU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44891C424F3B6645F516AEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AttendlyKSU/Pods-AttendlyKSU-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AttendlyKSU/Pods-AttendlyKSU-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AttendlyKSU/Pods-AttendlyKSU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		343FF8F928CF5627008C2467 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		343FF91228CF5629008C2467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF32096CFBF756BCC9BC6C7 /* Pods-AttendlyKSU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		343FF91328CF5629008C2467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614748E36A23D38C516B6F90 /* Pods-AttendlyKSU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
