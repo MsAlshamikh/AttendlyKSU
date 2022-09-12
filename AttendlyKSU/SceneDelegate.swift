@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  AttendlyKSU
+//  AttendlyApp
 //
-//  Created by SHAMMA  on 16/02/1444 AH.
+//  Created by SHAMMA  on 12/02/1444 AH.
 //
 
 import UIKit

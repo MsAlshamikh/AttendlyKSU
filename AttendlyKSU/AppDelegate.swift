@@ -1,20 +1,25 @@
 //
 //  AppDelegate.swift
-//  AttendlyKSU
+//  AttendlyApp
 //
-//  Created by SHAMMA  on 16/02/1444 AH.
+//  Created by SHAMMA  on 12/02/1444 AH.
 //
 
 import UIKit
 import FirebaseCore
+//import Firebase
+import FirebaseFirestore
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         FirebaseApp.configure()
+        let db = Firestore.firestore()
+        print(db)
+        
         return true
     }
 
